@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Banking customer segmentation | Yixuan Wang</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header><div class="wrap nav"><a class="brand" href="index.html"><span class="mark" aria-hidden="true">YW</span>Yixuan Wang</a>
+  <nav aria-label="Main navigation"><a href="index.html#work">Work</a><a href="index.html#about">About</a><a href="cv.pdf">CV</a><a href="index.html#contact">Contact</a></nav></div></header>
+  <main class="wrap case">
+    <a class="back" href="index.html#work">← All projects</a>
+    <p class="eyebrow">Team coursework · Unsupervised learning</p>
+    <h1>Banking customer segmentation</h1>
+    <p class="lead">Can recorded product use and campaign engagement reveal distinct groups of banking customers?</p>
+    <figure class="case-metrics"><figcaption>K-means silhouette by split</figcaption><dl><div><dt>Training</dt><dd>0.235</dd></div><div><dt>Validation</dt><dd>0.246</dd></div><div><dt>Test</dt><dd>0.248</dd></div></dl></figure>
+    <section><h2>My contribution</h2><p>I led the clustering workstream. I profiled six source tables, aggregated features at customer level, retained customers with no recorded uptake, and compared K-means and Mean Shift.</p></section>
+    <section><h2>Validation</h2><p>I evaluated separation, group sizes, and resampling stability. The three-cluster K-means model achieved a silhouette score of 0.246 on validation data and 0.248 on the test split.</p></section>
+    <section><h2>What I learned</h2><p>The assignments were stable under resampling, but removing uptake features changed them substantially (adjusted Rand index 0.172). I would compare the model against a simple uptake-based rule before using it for a marketing pilot.</p></section>
+    <!-- EDIT: Add a link to the public repository when available. -->
+    <div class="case-nav">
+      <a href="index.html#work">← All projects</a>
+      <a href="streaming-churn.html">Next project <span aria-hidden="true">→</span></a>
+    </div>
+  </main>
+</body>
+</html>

@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Selected work by Yixuan Wang in applied statistics, data science, and biostatistics.">
+  <title>Yixuan Wang | Data Science Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body id="top">
+  <a class="skip" href="#main">Skip to content</a>
+  <header>
+    <div class="wrap nav">
+      <a class="brand" href="#top"><span class="mark" aria-hidden="true">YW</span>Yixuan Wang</a>
+      <nav aria-label="Main navigation">
+        <a href="#work">Work</a><a href="#about">About</a><a href="cv.pdf">CV</a><a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+  <main class="wrap" id="main">
+    <section class="hero" aria-labelledby="intro">
+      <div class="hero-copy">
+        <p class="eyebrow">Data science portfolio · Sydney, Australia</p>
+        <h1 id="intro">Yixuan Wang</h1>
+        <p class="subtitle">Data science &amp; applied statistics</p>
+        <p class="intro">I’m a Master of Data Science and Innovation student at the University of Technology Sydney. My projects span customer analytics, predictive modelling and biostatistics.</p>
+        <div class="actions">
+          <a class="button" href="#work">Explore projects <span aria-hidden="true">↓</span></a>
+          <a class="button secondary" href="cv.pdf">View CV <span aria-hidden="true">↗</span></a>
+        </div>
+      </div>
+      <aside class="hero-panel" aria-label="Project highlights">
+        <p class="eyebrow">Project highlights</p>
+        <a href="bank-segmentation.html"><strong>15,000</strong><span>Customers profiled <span aria-hidden="true">↗</span></span></a>
+        <a href="streaming-churn.html"><strong>66.7%</strong><span>Churn recall on the test set <span aria-hidden="true">↗</span></span></a>
+        <a href="survival.html"><strong>5 years</strong><span>Planned survival analysis horizon <span aria-hidden="true">↗</span></span></a>
+      </aside>
+    </section>
+
+    <section class="work" id="work" aria-labelledby="work-title">
+      <div class="section-heading"><h2 id="work-title">Selected work</h2><p>Six case studies in modelling, public data and health research.</p></div>
+      <article class="feature">
+        <div class="feature-copy">
+          <p class="eyebrow">Featured case study · Individual coursework</p>
+          <h3>Who should a campaign contact first?</h3>
+          <p>I compared four classification models and evaluated how many subscribers each could reach under the same contact budget.</p>
+          <a class="button" href="subscription.html">Read the case study →</a>
+        </div>
+        <figure class="chart">
+          <figcaption>Subscribers captured at a 20% contact budget</figcaption>
+          <div class="chart-row">
+            <div class="chart-label"><span>Decision tree</span><strong>64.5%</strong></div>
+            <div class="track" aria-hidden="true"><span class="bar" style="--value: 64.5%"></span></div>
+          </div>
+          <div class="chart-row">
+            <div class="chart-label"><span>Logistic regression</span><strong>63.2%</strong></div>
+            <div class="track" aria-hidden="true"><span class="bar" style="--value: 63.2%"></span></div>
+          </div>
+          <small>Historical test split · 927 observed subscribers</small>
+        </figure>
+      </article>
+
+      <div class="cards">
+        <article class="card">
+          <div class="card-visual"><strong>15,000</strong><span>Customers profiled</span></div>
+          <div class="card-copy">
+            <p class="eyebrow">Team coursework · Unsupervised learning</p>
+            <h3>Banking customer segmentation</h3>
+            <p>I led the clustering analysis, combining product ownership, campaign engagement, and uptake into customer-level profiles.</p>
+            <a href="bank-segmentation.html">Read the case study →</a>
+          </div>
+        </article>
+        <article class="card">
+          <div class="card-visual"><strong>84 months</strong><span>Held-out period in the primary analysis</span></div>
+          <div class="card-copy">
+            <p class="eyebrow">Team coursework · Time series</p>
+            <h3>Can macro indicators forecast equity returns?</h3>
+            <p>I tested US macroeconomic indicators against a historical-mean benchmark using chronological validation.</p>
+            <a href="market-forecasting.html">Read the case study →</a>
+          </div>
+        </article>
+        <article class="card">
+          <div class="card-visual"><strong>0.400</strong><span>Average precision on the held-out test set</span></div>
+          <div class="card-copy">
+            <p class="eyebrow">Individual coursework · Classification</p>
+            <h3>Predicting streaming subscriber churn</h3>
+            <p>I compared three model families and tuned a decision threshold to balance recall and the cost of unnecessary offers.</p>
+            <a href="streaming-churn.html">Read the case study →</a>
+          </div>
+        </article>
+        <article class="card">
+          <div class="card-visual"><strong>92,189</strong><span>NSW road crashes analysed · 2020–2024</span></div>
+          <div class="card-copy">
+            <p class="eyebrow">Team coursework · Public data</p>
+            <h3>Understanding road crash severity</h3>
+            <p>A team analysis of factors associated with fatal or serious injury crashes in New South Wales.</p>
+            <a href="road-safety.html">Read the case study →</a>
+          </div>
+        </article>
+        <article class="card">
+          <div class="card-visual research"><strong>5 years</strong><span>Planned survival comparison horizon</span></div>
+          <div class="card-copy">
+            <p class="eyebrow">Research in progress · R</p>
+            <h3>Survival after colon cancer treatment</h3>
+            <p>A reanalysis of public trial data using restricted mean survival time and a Cox model.</p>
+            <a href="survival.html">Read the research plan →</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="split" id="about" aria-labelledby="about-title">
+      <h2 id="about-title">About</h2>
+      <div>
+        <p>My undergraduate studies are in applied statistics. At UTS, I’m building on that foundation through statistical learning and applied data analysis.</p>
+        <p>I’m especially interested in reproducible research and the use of statistics to answer health questions.</p>
+        <ul class="skill-list" aria-label="Technical skills">
+          <li>Python</li><li>R</li><li>SQL fundamentals</li><li>Excel</li><li>Statistical modelling</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="split contact-panel" id="contact" aria-labelledby="contact-title">
+      <h2 id="contact-title">Contact</h2>
+      <div>
+        <p>I’m interested in data analyst and research assistant opportunities.</p>
+        <p class="contact-item"><a href="tel:+61458263117">+61 458 263 117</a></p>
+        <p class="contact-item"><a href="mailto:iam.wyx@outlook.com">iam.wyx@outlook.com</a></p>
+        <p class="contact-item"><a href="mailto:Yixuan.Wang-13@student.uts.edu.au">Yixuan.Wang-13@student.uts.edu.au</a></p>
+        <!-- EDIT: Replace the example URLs and remove the comment markers to enable social links.
+        <p class="links">
+          <a href="https://github.com/YOUR-USERNAME">GitHub</a>
+          <a href="https://www.linkedin.com/in/YOUR-PROFILE/">LinkedIn</a>
+        </p>
+        -->
+      </div>
+    </section>
+  </main>
+  <footer><div class="wrap nav"><span>Yixuan Wang</span><a href="#top">Back to top ↑</a></div></footer>
+</body>
+</html>

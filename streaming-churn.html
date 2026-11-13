@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Predicting streaming subscriber churn | Yixuan Wang</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header><div class="wrap nav"><a class="brand" href="index.html"><span class="mark" aria-hidden="true">YW</span>Yixuan Wang</a>
+  <nav aria-label="Main navigation"><a href="index.html#work">Work</a><a href="index.html#about">About</a><a href="cv.pdf">CV</a><a href="index.html#contact">Contact</a></nav></div></header>
+  <main class="wrap case">
+    <a class="back" href="index.html#work">← All projects</a>
+    <p class="eyebrow">Individual coursework · Classification</p>
+    <h1>Predicting streaming subscriber churn</h1>
+    <p class="lead">How should a streaming service prioritise outreach when likely churners make up fewer than one in five records?</p>
+    <figure class="case-metrics"><figcaption>Held-out classification results</figcaption><dl><div><dt>Average precision</dt><dd>0.400</dd></div><div><dt>Recall</dt><dd>66.7%</dd></div><div><dt>Precision</dt><dd>33.2%</dd></div></dl></figure>
+    <section><h2>Data and methods</h2><p>I analysed 14,035 course-provided records, of which 17.86% were positive for churn. I excluded direct identifiers and payment fields, compared support vector, decision tree, and random forest classifiers, and used validation data to choose a threshold.</p></section>
+    <section><h2>Held-out results</h2><p>The final support vector classifier achieved 0.400 average precision versus a no-skill reference of about 0.179. It identified 334 of 501 churners, with 66.7% recall and 33.2% precision.</p></section>
+    <section><h2>Limitations</h2><p>The dataset did not include the outcomes of retention offers. A controlled trial would be needed to measure whether a discount changes customer behaviour.</p></section>
+    <!-- EDIT: Add a link to the public repository when available. -->
+    <div class="case-nav">
+      <a href="index.html#work">← All projects</a>
+      <a href="market-forecasting.html">Next project <span aria-hidden="true">→</span></a>
+    </div>
+  </main>
+</body>
+</html>

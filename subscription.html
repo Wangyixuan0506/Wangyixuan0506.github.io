@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Prioritising subscription outreach | Yixuan Wang</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header><div class="wrap nav"><a class="brand" href="index.html"><span class="mark" aria-hidden="true">YW</span>Yixuan Wang</a>
+  <nav aria-label="Main navigation"><a href="index.html#work">Work</a><a href="index.html#about">About</a><a href="cv.pdf">CV</a><a href="index.html#contact">Contact</a></nav></div></header>
+  <main class="wrap case">
+    <a class="back" href="index.html#work">← All projects</a>
+    <p class="eyebrow">Individual coursework · Statistical learning</p>
+    <h1>Prioritising subscription outreach</h1>
+    <p class="lead">Which customers should a campaign contact when it can only reach 20% of the list?</p>
+    <section><h2>Data and methods</h2><p>I used 41,168 cleaned records to compare logistic regression, probit regression, a decision tree, and k-nearest neighbours. I used repeated cross-validation for model selection and evaluated rankings on a historical holdout.</p></section>
+    <section><h2>What I found</h2><p>At the same contact budget, the decision tree captured 598 of 927 subscribers (64.5%) and logistic regression captured 586 (63.2%). Logistic regression had the highest mean cross-validation average precision, while the decision tree had the highest historical test average precision.</p></section>
+    <figure class="result-figure">
+      <img src="subscription-ranking.png" width="1540" height="748" loading="lazy"
+           alt="The top fifth of records ranked by logistic regression or KNN had a subscription rate of about 36%, compared with 11% across the test set.">
+      <figcaption>Additional budget analysis comparing logistic regression and KNN on the same historical split.</figcaption>
+    </figure>
+    <section><h2>Limitations</h2><p>The holdout had been inspected before the final report. A later campaign would provide a stronger test of whether the ranking generalises.</p></section>
+    <section hidden>
+      <!-- EDIT: Remove the hidden attribute when adding a repository link. -->
+      <h2>Project resources</h2>
+      <!-- EDIT: Add your repository URL once the code is ready to publish.
+      <p><a href="https://github.com/YOUR-USERNAME/YOUR-REPOSITORY">View code on GitHub</a></p>
+      -->
+    </section>
+    <div class="case-nav">
+      <a href="index.html#work">← All projects</a>
+      <a href="bank-segmentation.html">Next project <span aria-hidden="true">→</span></a>
+    </div>
+  </main>
+</body>
+</html>

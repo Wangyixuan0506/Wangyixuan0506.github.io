@@ -1,0 +1,84 @@
+/* Portfolio landing page */
+.landing {
+  --page: #f4f6f8;
+  --navy: #102337;
+  --text: #172b40;
+  --quiet: #455c73;
+  --mint: #b6f4d0;
+  --edge: #d1dde8;
+  --display: "Space Grotesk", "Trebuchet MS", sans-serif;
+  background: var(--page);
+  color: var(--text);
+}
+.landing .wrap { width: min(100% - 3rem, 76rem); }
+.landing > header { background: #0b1b2b; color: #f6fbff; border-bottom: 1px solid #31465b; }
+.landing .mark { background: var(--mint); color: #0b1b2b; }
+.landing .nav-cv { color: var(--mint); }
+.landing .hero-shell {
+  position: relative;
+  overflow: hidden;
+  color: #f6fbff;
+  background: radial-gradient(ellipse at 85% 15%, #244e65, transparent 58%), #0b1b2b;
+}
+.landing .hero {
+  grid-template-columns: minmax(0, 1.5fr) minmax(17rem, .8fr);
+  align-items: center;
+  min-height: min(41rem, 78svh);
+  padding-block: clamp(3.75rem, 8vw, 7.5rem);
+  gap: 2rem clamp(2rem, 6vw, 6rem);
+}
+.landing h1 { font-size: clamp(3.3rem, 8.8vw, 8rem); letter-spacing: -.075em; }
+.landing .hero .eyebrow { color: #c5e5f6; }
+.landing .hero .subtitle { color: var(--mint); }
+.landing .hero .intro { color: #e0eaf3; }
+.landing .button { background: var(--mint); border: 1px solid transparent; color: #142b28; }
+.landing .button:hover { background: #d9ffe9; }
+.landing .hero .button.secondary { background: transparent; border-color: #8eaac2; color: #f6fbff; }
+.landing .hero .button.secondary:hover { background: #263f54; }
+.landing .hero-panel {
+  min-width: 0;
+  background-color: #152f44;
+  background-image: repeating-linear-gradient(0deg, transparent 0 31px, #c7e8ff13 32px),
+    repeating-linear-gradient(90deg, transparent 0 31px, #c7e8ff13 32px);
+  border: 1px solid #7ba4be70;
+  border-radius: 1.15rem;
+  padding: clamp(1.25rem, 4vw, 3rem);
+  box-shadow: 0 1.5rem 3.5rem #040f1980;
+}
+.landing .hero-panel a { padding-block: .9rem; }
+.landing .hero-panel a + a { border-color: #a2bfd34d; }
+.landing .hero-panel strong { color: var(--mint); font-size: clamp(2rem, 4vw, 3.4rem); }
+.landing .hero-panel a > span { color: #e0eaf3; }
+.landing .work { border: 0; padding-top: clamp(3rem, 7vw, 6rem); }
+.landing .section-heading p, .landing .split p, .landing .card-copy > p:not(.eyebrow) { color: var(--quiet); }
+.landing .feature { background: var(--navy); }
+.landing .feature .eyebrow { color: var(--mint); }
+.landing .chart { background: #d8f8e6; color: #122c29; }
+.landing .track { background: #afdbc8; }
+.landing .bar { background: #245c56; }
+.landing .chart small { color: #3c5b54; }
+.landing .cards { gap: 1rem; }
+.landing .card { background: #fff; border-color: var(--edge); transition: box-shadow .2s ease, border-color .2s ease; }
+.landing .card:hover, .landing .card:focus-within { border-color: #7b9eb5; box-shadow: 0 .6rem 1.7rem #18395412; }
+.landing .cards .card .card-visual { background: #e4edf6; border-bottom: 1px solid var(--edge); }
+.landing .cards .card:nth-child(2n) .card-visual { background: #e1f3ed; }
+.landing .split, .landing .skill-list li { border-color: var(--edge); }
+.landing .contact-panel { background: #e1ecf5; }
+.landing :focus-visible { outline: 3px solid #176da0; outline-offset: 4px; }
+.landing .hero-shell :focus-visible, .landing > header :focus-visible, .landing .feature :focus-visible { outline-color: #fff; }
+@media (prefers-reduced-motion: no-preference) {
+  .landing .hero-copy, .landing .hero-panel { animation: portfolio-enter .55s ease-out both; }
+  .landing .hero-panel { animation-delay: .1s; }
+  @keyframes portfolio-enter { from { opacity: 0; transform: translateY(12px); } to { opacity: 1; transform: none; } }
+}
+@media (max-width: 56rem) {
+  .landing .hero { grid-template-columns: 1fr; min-height: 0; }
+  .landing .hero-panel { display: grid; grid-template-columns: repeat(auto-fit, minmax(9rem, 1fr)); gap: .2rem 1rem; }
+  .landing .hero-panel .eyebrow { grid-column: 1 / -1; margin-bottom: 0; }
+  .landing .hero-panel a + a { border-top: 0; }
+}
+@media (max-width: 39rem) {
+  .landing .wrap { width: calc(100% - 2rem); }
+  .landing .hero-panel a { padding-block: .55rem; }
+}
+@media (prefers-reduced-motion: reduce) { .landing .card { transition: none; } }

@@ -7,6 +7,7 @@
   <title>Yixuan Wang | Data Science Portfolio</title>
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="portfolio.css">
+  <script defer src="project-filter.js"></script>
 </head>
 <body id="top" class="landing">
   <a class="skip" href="#main">Skip to content</a>
@@ -43,7 +44,16 @@
     <div class="wrap">
     <section class="work" id="work" aria-labelledby="work-title">
       <div class="section-heading"><h2 id="work-title">Selected work</h2><p>Six case studies in modelling, public data and health research.</p></div>
-      <article class="feature">
+      <div class="project-controls" hidden>
+        <div class="project-filters" role="group" aria-label="Filter projects">
+          <button type="button" data-filter="all" aria-pressed="true">All projects</button>
+          <button type="button" data-filter="individual" aria-pressed="false">Individual coursework</button>
+          <button type="button" data-filter="team" aria-pressed="false">Team coursework</button>
+          <button type="button" data-filter="research" aria-pressed="false">Research</button>
+        </div>
+        <p class="project-count" role="status">6 projects shown</p>
+      </div>
+      <article class="feature" data-project="individual">
         <div class="feature-copy">
           <p class="eyebrow">Featured case study · Individual coursework</p>
           <h3>Who should a campaign contact first?</h3>
@@ -65,7 +75,7 @@
       </article>
 
       <div class="cards">
-        <article class="card">
+        <article class="card" data-project="team">
           <div class="card-visual"><strong>15,000</strong><span>Customers profiled</span></div>
           <div class="card-copy">
             <p class="eyebrow">Team coursework · Unsupervised learning</p>
@@ -74,7 +84,7 @@
             <a href="bank-segmentation.html">Read the case study →</a>
           </div>
         </article>
-        <article class="card">
+        <article class="card" data-project="team">
           <div class="card-visual"><strong>84 months</strong><span>Held-out period in the primary analysis</span></div>
           <div class="card-copy">
             <p class="eyebrow">Team coursework · Time series</p>
@@ -83,7 +93,7 @@
             <a href="market-forecasting.html">Read the case study →</a>
           </div>
         </article>
-        <article class="card">
+        <article class="card" data-project="individual">
           <div class="card-visual"><strong>0.400</strong><span>Average precision on the held-out test set</span></div>
           <div class="card-copy">
             <p class="eyebrow">Individual coursework · Classification</p>
@@ -92,7 +102,7 @@
             <a href="streaming-churn.html">Read the case study →</a>
           </div>
         </article>
-        <article class="card">
+        <article class="card" data-project="team">
           <div class="card-visual"><strong>92,189</strong><span>NSW road crashes analysed · 2020–2024</span></div>
           <div class="card-copy">
             <p class="eyebrow">Team coursework · Public data</p>
@@ -101,12 +111,12 @@
             <a href="road-safety.html">Read the case study →</a>
           </div>
         </article>
-        <article class="card">
+        <article class="card" data-project="research">
           <div class="card-visual research"><strong>5 years</strong><span>Planned survival comparison horizon</span></div>
           <div class="card-copy">
             <p class="eyebrow">Research in progress · R</p>
             <h3>Survival after colon cancer treatment</h3>
-            <p>A reanalysis of public trial data using restricted mean survival time and a Cox model.</p>
+            <p>My undergraduate thesis project uses public clinical trial data to compare overall survival after colon cancer treatment. I plan to estimate restricted mean survival time and fit a Cox model.</p>
             <a href="survival.html">Read the research plan →</a>
           </div>
         </article>

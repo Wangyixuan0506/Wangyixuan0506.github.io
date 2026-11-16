@@ -82,3 +82,34 @@
   .landing .hero-panel a { padding-block: .55rem; }
 }
 @media (prefers-reduced-motion: reduce) { .landing .card { transition: none; } }
+
+.landing .project-controls { margin-block: 1.1rem 1.25rem; }
+.landing .project-controls:not([hidden]) {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: .65rem 1.25rem;
+}
+.landing .project-filters { display: flex; flex-wrap: wrap; gap: .5rem; }
+.landing .project-filters button {
+  min-height: 2.75rem;
+  border: 1px solid #aebdcb;
+  border-radius: 2rem;
+  background: #fff;
+  color: var(--text);
+  font: inherit;
+  font-size: .88rem;
+  font-weight: 700;
+  padding: .4rem .95rem;
+  cursor: pointer;
+}
+.landing .project-filters button:hover { border-color: #45617a; }
+.landing .project-filters button[aria-pressed="true"] {
+  border-color: var(--navy);
+  background: var(--navy);
+  color: #fff;
+}
+.landing .project-count { color: var(--quiet); font-size: .9rem; }
+.landing [data-project][hidden], .landing .cards[hidden] { display: none; }
+.landing .cards .card .card-visual.research { background: #d8f8e6; }
